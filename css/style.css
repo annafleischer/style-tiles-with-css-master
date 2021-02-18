@@ -14,13 +14,13 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: rgb(255, 223, 228);
+  --bg-color: rgb(255, 245, 246);
   --link-color: rgb(250, 224, 185);
   --link-hover-color: rgb(193, 218, 255);
   --color-4: rgb(225, 203, 255);
   --color-5: rgb(255, 237, 137);
 
-  --primary-font: "Open Sans", sans-serif;
+  --primary-font: Verdana;
   --secondary-font: "Droid Serif", serif;
   --main-text-color: #000;
 
@@ -68,37 +68,32 @@ footer {
 
 .full-width {
   background: var(--bg-color);
-  color: white;
   width: 100%;
 }
 
 .header-wrapper h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+  font-family: bubble bobble;
+  font-size: 7rem;
   padding-right: 0.75em;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0 0 5px rgb(209, 165, 164);
+
+  
 }
 
 .header-wrapper h2 {
   font-size: 2em;
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
   margin: var(--white-space) 0;
-  text-shadow: 0 0 5px rgb(209, 165, 164);
+  
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
-  text-shadow: 0 0 5px rgb(209, 165, 164);
+  
 }
 
 .header-wrapper h4 {
   font-size: 1rem;
-  text-shadow: 0 0 5px rgb(209, 165, 164);
+  
   padding-top: 10px;
 }
 
@@ -133,22 +128,27 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
+  border-radius: 2rem;
   background-color: var(--bg-color);
 }
 
 .color-swatch-2 {
+  border-radius: 2rem;
   background-color: var(--link-color);
 }
 
 .color-swatch-3 {
+  border-radius: 2rem;
   background-color: var(--link-hover-color);
 }
 
 .color-swatch-4 {
+  border-radius: 2rem;
   background-color: var(--color-4);
 }
 
 .color-swatch-5 {
+  border-radius: 2rem;
   background-color: var(--color-5);
 }
 
@@ -159,20 +159,27 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/shapes.jpg);
+  border-radius: 2rem;
+  background: url(../img/huggy.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   align-self: center;
 }
 
 .texture-swatch-2 {
-  background: url(../img/unnamed.png);
+  border-radius: 2rem;
+  background: url(../img/angry.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   align-self: center;
 }
 
 .texture-swatch-3 {
-  background: url(../img/milky.jpg) top left repeat;
+  background: url(../img/Screenshot\ 2021-02-18\ at\ 11.46.47.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  border-radius: 2rem;
 }
 
 .images ul {
@@ -187,19 +194,19 @@ ul li:last-child {
 }
 
 button {
+  font-family: bubble bobble;
+  font-size: 2rem;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 4rem;
   background: var(--link-color);
   text-align: center;
-  text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
+  letter-spacing: 1px;text
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
+  border: none;
+  box-shadow: 1px 1px 10px lightblue;
 }
 
 .secondary-button {
@@ -228,7 +235,7 @@ button:focus-within {
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 2;
   max-width: 960px;
 }
@@ -253,7 +260,7 @@ p[class*="font-details-"] {
   margin-top: 0.5rem;
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
-  font-family: var(--secondary-font);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #6f6f6f;
 }
 
